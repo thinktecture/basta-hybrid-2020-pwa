@@ -1,0 +1,10 @@
+<p>todos works!</p>
+
+<input #input>
+<button (click)="add(input.value)">Add</button>
+
+<ul>
+  <li *ngFor="let todo of todos">{{ todo.title }}</li>
+</ul>
+
+<button (click)="sync()">Sync</button>
